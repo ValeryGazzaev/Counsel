@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap&subset=cyrillic');
 
 @import url('core.css');
+@import url('blocks/header.css');
+
 
 @font-face {
 	font-family: "Segoe UI Emoji";
