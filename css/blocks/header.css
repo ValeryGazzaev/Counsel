@@ -1,5 +1,6 @@
 .header {
 	position: relative;
+	height: 896px;
 	background-position: center;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -18,7 +19,6 @@
 
 .header-wrap {
 	position: relative;
-	height: 100vh;
 	z-index: 10;
 }
 
@@ -168,10 +168,11 @@
 .header-slider {
 	position: relative;
 	width: 1170px;
+	height: 740px;
 }
 
 .header-slider-inner {
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .header-slider input {
@@ -192,41 +193,47 @@
 .header-slides {
 	position: relative;
 	width: 1170px;
-	height: 500px;
+	height: 740px;
 }
 
 .header-slides .slide-wrap {
 	position: absolute;
-	top: 289px;
-	right: 0;
-}
+	top: 49.8%;
+	transform: translateY(-50%);
+	right: 243px;
+	text-align: right;
+} 
 
-.header-slides p {
+.header-slides .slide-wrap p {
 	position: relative;
-	max-width: 280px;
+	font-family: 'Montserrat', sans-serif;
+	width: 300px;
 	font-weight: 700;
 	font-size: 51px;
 	line-height: 51px;
 	color: #fff;
-	z-index: 9;
+	z-index: 9 !important;
 }
 
-.header-slides p::before {
+.header-slides .slide-wrap p::before {
 	position: absolute;
 	content: "";
-	left: 189px;
-	width: 299px;
-	height: 378px;
-	box-shadow: 0 0 0 10px #fde428; 
+	top: -68px;
+	left: 233px;
+	width: 278px;
+	height: 358px;
+	box-shadow: 0 0 0 10px #fde428;
+	z-index: 0 !important;
 }
 
 .header-slides a {
 	display: inline-block;
 	font-size: 20px;
 	color: #fde428;
+	margin-top: 38px;
 }
 
-.header-slides a:before {
+.header-slides a::before {
 	bottom: -2px;
 	background-color: #fde428;
 }
@@ -244,8 +251,8 @@
 	position: absolute;
 	content: "/";
 	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	left: 57%;
+	transform: translate(-50%, -38%);
 	color: #fde428;
 }
 
