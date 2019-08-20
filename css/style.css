@@ -3,7 +3,7 @@
 @import url('core.css');
 @import url('blocks/header.css');
 @import url('blocks/feature-1.css');
-
+@import url('blocks/feature-2.css');
 @font-face {
 	font-family: "Segoe UI Emoji";
 	src: url("../assets/fonts/seguiemj.ttf") format("truetype");
