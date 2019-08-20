@@ -2,7 +2,7 @@
 
 @import url('core.css');
 @import url('blocks/header.css');
-
+@import url('blocks/feature-1.css');
 
 @font-face {
 	font-family: "Segoe UI Emoji";

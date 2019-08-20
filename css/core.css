@@ -17,6 +17,7 @@
 .title {
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
+	font-weight: 800;
 	font-size: 31px;
 	line-height: 31px;
 	color: #002e5b;
@@ -43,12 +44,29 @@
 	background-color: #002e5b;
 }
 
+.link:hover {
+	color: #fde428;
+}
+
+.link:hover::before {
+	background-color: #fde428;
+}
+
+.link:active {
+	transform: scale(0.98);
+	color: #282828;
+}
+
+.link:active::before {
+	background-color: #282828;
+}
+
 a {
 	text-decoration: none;
 }
 
 body {
-	font-family: "Segoe UI Emoji";
+	font-family: "Segoe UI Emoji", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 25px;
 	color: #333333;
