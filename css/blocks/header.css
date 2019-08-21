@@ -471,7 +471,7 @@
 	}
 }
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
 	.header-slider {
 		width: 300px;
 	}

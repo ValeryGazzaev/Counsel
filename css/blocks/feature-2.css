@@ -5,7 +5,7 @@
 }
 
 .feature-2-wrap {
-	display: -webkit-flex;
+	max-width: 1140px;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -16,58 +16,129 @@
 }
 
 .feature-2-grid {
+	position: relative;
+	display: -ms-grid;
 	display: grid;
-	width: 500px;
+	max-width: 501px;
 	height: 455px;
-	grid-template-columns: repeat(5, 1fr);
+	-ms-grid-columns: (99px)[5];
+	grid-template-columns: repeat(5, 99px);
+	-ms-grid-rows: (1fr)[5];
 	grid-template-rows: repeat(5, 1fr);
 	grid-gap: 1px;
 }
 
 .feature-2-grid .items {
-	width: 105px;
+	height: 100px;
 	background-color: #fff;
 }
 
+.feature-2-grid .items:nth-child(-n+5) {
+	height: 55px;
+}
 
 .quote-scale {
 	position: absolute;
-	left: -20px;
-	display: -webkit-flex;
+	left: -30px;
+	bottom: -80px;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	-webkit-flex-direction: column;
 	-moz-flex-direction: column;
-	-ms-flex-direction: column;
 	-o-flex-direction: column;
 	flex-direction: column;
-	margin-top: 40px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #d1d1d1;
 }
 
 .quote-scale p {
-	height: 85px;
-	vertical-align: bottom;
+	height: 100px;
 }
 
 .month-scale {
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
-	width: 455px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	width: 445px;
+	color: #d1d1d1;
+	text-transform: uppercase;
+	margin: 10px 0 0 -20px; 
+}
+
+.feature-2-grid .lines {
+	position: absolute;
+}
+
+.feature-2-grid .blue {
+	top: 53px;
+}
+
+.feature-2-grid .blue::before {
+	position: absolute;
+	content: "";
+	right: 5px;
+	display: block;
+	border-radius: 50%;
+	height: 6px;
+	width: 6px;
+	background-color: rgb(0, 46, 91);
+}
+
+.feature-2-grid .blue::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 10px;
+	display: block;
+	border-radius: 50%;
+	height: 6px;
+	width: 6px;
+	background-color: rgb(0, 46, 91);
+}
+
+.feature-2-grid .yellow {
+	top: 180px;
+	z-index: 10;
+}
+
+.feature-2-grid .yellow::before {
+	position: absolute;
+	content: "";
+	top: 18px;
+	right: 0;
+	display: block;
+	border-radius: 50%;
+	height: 6px;
+	width: 6px;
+	background-color: rgb(253, 228, 40);
+}
+
+.feature-2-grid .yellow::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 10px;
+	display: block;
+	border-radius: 50%;
+	height: 6px;
+	width: 6px;
+	background-color: rgb(253, 228, 40);
 }
 
 .feature-2-block-2 {
-	width: 570px;
+	max-width: 570px;
 }
 
 .feature-2-block-2 p:nth-child(1) {
 	max-width: 500px;
 }
+
 .feature-2-block-2 p:nth-child(2) {
 	font-size: 21px;
 	line-height: 25px;
@@ -77,22 +148,83 @@
 	max-width: 430px;
 }
 
-.feature-2-block-2 p:nth-child(3) {
-	max-width: 525px;
-}
-
 .feature-2-block-2 a {
 	margin-top: 27px;
 }
 
 @media (max-width: 1150px) {
-	.feature-2 {
-		text-align: center;
-	}
 	.feature-2-wrap {
-		padding: 0 30px;
+		max-width: 100%;
+		-moz-flex-direction: column-reverse;
+		-o-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		-ms-align-items: center;
+		align-items: center;
 	}
-	.feature-2 p {
-		margin: 20px auto !important;
+	.feature-2-block-2 {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	.feature-2-block-2 p {
+		max-width: 100% !important;
+	}
+}
+
+@media (max-width: 600px) {
+	.feature-2-grid {
+		max-width: 300px;
+		height: 255px;
+		-ms-grid-columns: (59px)[5];
+		grid-template-columns: repeat(5, 59px);
+	}
+	.feature-2-grid .items {
+		height: 50px;
+		background-color: #fff;
+	}
+	.feature-2-grid .items:nth-child(-n+5) {
+		height: 25px;
+	}
+	.quote-scale {
+		left: -20px;
+		bottom: -5px;
+		font-size: 12px;
+	}
+	.quote-scale p {
+		height: 50px;
+	}
+	.month-scale {
+		width: 260px;
+		font-size: 12px;
+		margin: 0 0 0 -10px; 
+	}
+	.feature-2-grid .lines img {
+		width: 270px;
+		height: 208px;
+	}
+	.feature-2-grid .yellow {
+		top: 82px;
+	}
+	.feature-2-grid .blue {
+		top: 25px;
+	}
+	.feature-2-grid .yellow img {
+		height: 150px;
+	}
+	.feature-2-grid .blue::before {
+		top: -2px;
+		right: 0;
+	}
+	.feature-2-grid .blue::after {
+		left: 0;
+		bottom: 7px;
+	}
+	.feature-2-grid .yellow::before {
+		top: 8px;
+		right: 0;
+	}
+	.feature-2-grid .yellow::after {
+		left: 0;
+		bottom: 6px;
 	}
 }
