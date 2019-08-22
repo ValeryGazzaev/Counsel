@@ -1,0 +1,125 @@
+.services {
+	padding: 94px 0;
+}
+
+.services-top {
+	max-width: 550px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.services-top p:nth-child(2) {
+	font-size: 21px;
+	line-height: 25px;
+	color: #666666;
+	margin: 17px 0 43px;
+}
+
+.services-wrap {
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+[class^="services-block"] {
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-moz-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	width: 370px; 
+}
+
+.services-wrap .images {
+	width: 370px;
+	height: 190px;
+}
+
+.services-wrap .image-1 {
+	background-color: #69d2e7;
+}
+
+.services-wrap .image-2 {
+	background-color: #add478;
+}
+
+.services-wrap .image-3 {
+	background-color: #f49f77;
+}
+
+.services-block-text {
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-moz-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+
+.services-block-text p:nth-of-type(1) {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 21px;
+	line-height: 48px;
+	color: #002e5b;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 21px 0 4px;
+}
+
+@media (max-width: 1220px) {
+	.services-wrap {
+		-moz-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	[class^="services-block"] {
+		-moz-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.services-block-text {
+		margin-left: 30px;
+	}
+}
+
+@media (max-width: 680px) {
+	.services-block-text p:nth-of-type(1) {
+		line-height: 50px;
+		margin: 0px 0 4px;
+	}
+}
+
+@media (max-width: 620px) {
+	.services {
+		padding-top: 40px;
+		padding-bottom: 0;
+	}
+	[class^="services-block"] {
+		-moz-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.services-block-text {
+		text-align: center;
+		margin-left: 0;
+	}
+	.services-wrap .images {
+		width: 85%;
+		margin: 0 auto;
+		
+	}
+	.services-block-text p:nth-of-type(1) {
+		margin: 20px 0 4px;
+	}
+}
