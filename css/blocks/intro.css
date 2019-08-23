@@ -1,0 +1,11 @@
+.intro {
+	padding: 98px 0;
+}
+
+.intro-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
