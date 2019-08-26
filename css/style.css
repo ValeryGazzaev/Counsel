@@ -9,6 +9,7 @@
 @import url('blocks/stats.css');
 @import url('blocks/intro.css');
 @import url('blocks/review.css');
+@import url('blocks/contacts.css');
 
 @font-face {
 	font-family: "Segoe UI Emoji";
