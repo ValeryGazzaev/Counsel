@@ -17,7 +17,7 @@
 	top: -98px;
 	left: 146px;
 	width: 270px;
-	height: 525px;
+	height: 519px;
 	background-color: #fde428;
 }
 
@@ -108,7 +108,7 @@
 
 @media (max-width: 540px) {
 	.intro-video::before {
-		top: 60%;
+		top: 55%;
 		width: 50px;
 		height: 50px;
 		background-size: cover;
@@ -120,6 +120,6 @@
 	padding: 98px 0 0px;
 }
 	.intro-video::before {
-		top: 50%;
+		top: 35%;
 	}
 }

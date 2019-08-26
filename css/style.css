@@ -8,7 +8,14 @@
 @import url('blocks/services.css');
 @import url('blocks/stats.css');
 @import url('blocks/intro.css');
+@import url('blocks/review.css');
+
 @font-face {
 	font-family: "Segoe UI Emoji";
 	src: url("../assets/fonts/seguiemj.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "HelveticaRoundedLT";
+	src: url("../assets/fonts/helvetica.ttf") format("truetype");
 }
